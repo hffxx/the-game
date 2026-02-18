@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed = 1f;
+    private float moveSpeed = 4f;
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -50,7 +51,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void AdjustPlayerFacingDirection()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         if (mousePosition.x < transform.position.x)
         {
             mySpriteRenderer.flipX = true;
