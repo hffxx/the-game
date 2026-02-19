@@ -46,3 +46,7 @@ crashlytics-build.properties
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ===== Node / Server =====
+server/node_modules/
+server/dist/
