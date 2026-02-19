@@ -1,7 +1,7 @@
 import { Server } from "colyseus";
 import { createServer } from "http";
 import express from "express";
-import { MyRoom } from "./rooms/MyRoom";
+import { MyRoom } from "./rooms/my-room/MyRoom";
 
 const port = Number(process.env.PORT ?? 2567);
 const app = express();
