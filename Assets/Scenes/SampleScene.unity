@@ -340,6 +340,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619651034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619651035}
+  m_Layer: 0
+  m_Name: SplashAnimationSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619651035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619651034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.673, y: 0.213, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796504264}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341165144
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,13 +608,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358201196}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.9031329, w: 0.4293612}
-  m_LocalPosition: {x: 0.367, y: 0.924, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6184701, w: 0.7858084}
+  m_LocalPosition: {x: 0.468, y: 0.728, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796504264}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 129.146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 76.409}
 --- !u!212 &1358201198
 SpriteRenderer:
   serializedVersion: 2
@@ -677,6 +708,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7ffbbb67f294144cb1304130c8491d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sword
+  slashAnimPrefab: {fileID: 5499609045970258806, guid: 14405e7160dc3544d8b615f1ff5535ea, type: 3}
+  slashAnimSpawnPoint: {fileID: 619651035}
 --- !u!1 &1430592017
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +832,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1358201197}
+  - {fileID: 619651035}
   m_Father: {fileID: 1341165147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1796504265
