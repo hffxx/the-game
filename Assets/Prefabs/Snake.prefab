@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5364923405506222538}
   - component: {fileID: 7186675384912152504}
   - component: {fileID: 2589113947780176492}
+  - component: {fileID: 2270638530374147360}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Untagged
@@ -208,6 +209,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2270638530374147360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979828558819724559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676c77259cb166a468220e8309eea995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  startingHealth: 3
 --- !u!1 &8317843568528753609
 GameObject:
   m_ObjectHideFlags: 0
