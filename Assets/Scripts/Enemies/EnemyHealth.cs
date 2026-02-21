@@ -15,14 +15,14 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        DetectDeath();
     }
 
-    private void Die()
+    private void DetectDeath()
     {
-        Destroy(this.gameObject);
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
